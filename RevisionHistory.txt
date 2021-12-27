@@ -1,0 +1,17 @@
+﻿#-----------------------------------------------------
+# Revision history (B5L_TOFSensorSampleGetResult_for-Python)
+#-----------------------------------------------------
+
+ver 1.0 (2020/04/24)
+    - First release
+ver 1.1 (2021/11/29)
+    - Add the following note to the Readme file
+       The response data of Get result command can't be output as file.
+       It is possible to display response data in screen,
+       if the code of TOFSensorSampleGetResult.py is modified as follows, but output speed is very slow.
+           Line 97 : data = ser.log_shape(False)　⇒　data = ser.log_shape(True)
+           Line 120 :  ser.log_shape(False)　⇒　data = ser.log_shape(True)
+
+       For checking performance, please download evaluation software from following URL and use it.
+       https://components.omron.com/sensors/displacement-sensors_ranging-sensors/3D-TOF-sensor-module/B5L_licence
+
